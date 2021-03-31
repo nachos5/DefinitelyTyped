@@ -20,6 +20,7 @@ declare module '@wordpress/data' {
 export type BlockAlignment = 'left' | 'center' | 'right' | 'wide' | 'full';
 
 export interface BlockEditProps<T extends Record<string, any>> extends BlockSaveProps<T> {
+    readonly name: string;
     readonly className: string;
     readonly clientId: string;
     readonly isSelected: boolean;
